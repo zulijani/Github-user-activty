@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"Github-user-activity/variables"
 )
 
 func main(){
@@ -21,5 +22,8 @@ func main(){
 }
 
 func get_github_api(username string){
+	variables.Github_url = fmt.Sprintf("https://api.github.com/users/%s/events", username)
+
+	
 
 }
